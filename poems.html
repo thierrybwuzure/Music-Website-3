@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="images/header 1.jpg">
+    <title>Poems | Thierry Bwuzure Music</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Crete Round, Dancing Script, Roboto Condensed, Roboto Flex -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Dancing+Script:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 id="name" class="zeyada-regular">
+                <a href="index.html">
+                    <span id="bwuzure">Thierry Bwuzure</span>
+                </a>
+            </h1>
+        </div>
+
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="poems.html" class="active">Poems</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="poems">
+        <div class="wrapper">
+            <div class="hero-section">
+                <div class="title-container">
+                    <div class="decorative-line"></div>
+                    <h3 class="section-title">Poems</h3>
+                    <div class="decorative-line"></div>
+                </div>
+            </div>
+            <div class="poem-container">
+                <h4 class="poem-title" onclick="openModal('fear-hatred-modal')">Fear and Hatred</h4>
+                <article class="fear-hatred" onclick="openModal('fear-hatred-modal')">
+                </article>
+            </div>
+
+            <div class="poem-container">
+                <h4 class="poem-title" onclick="openModal('seapiece-modal')">Seapiece</h4>
+                <article class="seapiece" onclick="openModal('seapiece-modal')">
+                </article>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+
+    <!-- Poem Modals -->
+    <div id="fear-hatred-modal" class="poem-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('fear-hatred-modal')">&times;</span>
+            <h2>Fear and Hatred</h2>
+            <div class="poem-text">
+                <p>Cloaked evil comes as light<br>
+                    Urging to wear a mask of fear<br>
+                    A veil of anxiety and submission<br>
+                    Breeding hatred in the heart<br><br>
+
+                    But love conquers all<br>
+                    Breaking chains of darkness<br>
+                    Setting the captive free<br>
+                    With wings of hope and peace<br><br>
+
+                    No weapon formed against love<br>
+                    Shall ever prosper<br>
+                    For light overcomes darkness<br>
+                    And truth destroys all lies<br><br>
+
+                    Stand firm in the light<br>
+                    Let courage be your shield<br>
+                    And love your mighty sword<br>
+                    Against fear and hatred's yield</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="seapiece-modal" class="poem-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('seapiece-modal')">&times;</span>
+            <h2>Seapiece</h2>
+            <div class="poem-text">
+                <p>I wish rest never cease<br>
+                    That I could sail overseas<br>
+                    Through the ocean of stillness<br>
+                    Where waves whisper peace<br><br>
+
+                    Beyond the horizon's call<br>
+                    Where seabirds dance and soar<br>
+                    In symphony with the wind<br>
+                    Upon the endless shore<br><br>
+
+                    The salt air fills my lungs<br>
+                    With dreams of distant lands<br>
+                    Where time moves like the tide<br>
+                    Gentle as shifting sands<br><br>
+
+                    In this moment of grace<br>
+                    I find my soul's release<br>
+                    Floating on liquid light<br>
+                    In perfect, endless peace</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrapper" id="social">
+            <ul class="social">
+                <li id="soundcloud">
+                    <a href="https://soundcloud.com/thierrybwuzure" target="_blank" rel="noopener"
+                        title="Follow me on SoundCloud" aria-label="Follow me on SoundCloud"></a>
+                </li>
+
+                <li id="youtube">
+                    <a href="https://www.youtube.com/@thierrybwuzuremusic" target="_blank" rel="noopener"
+                        title="Subscribe to my YouTube Channel" aria-label="Subscribe to my YouTube Channel"></a>
+                </li>
+
+                <li id="spotify">
+                    <a href="https://open.spotify.com/intl-fr/artist/6AAWaFP8W5Do6aw5xhrXoe" target="_blank"
+                        rel="noopener" title="Listen on Spotify" aria-label="Listen on Spotify"></a>
+                </li>
+
+                <li id="facebook">
+                    <a href="https://www.facebook.com/thierrybwuzuremusic/" target="_blank" rel="noopener"
+                        title="Follow me on Facebook" aria-label="Follow me on Facebook"></a>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+
+        <p>©2025 TovCode. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" onclick="scrollToTop()">↑</button>
+
+    <script>
+        // Show/hide scroll to top button
+        window.addEventListener('scroll', function () {
+            const button = document.getElementById('scrollToTop');
+            if (window.pageYOffset > 300) {
+                button.classList.add('show');
+            } else {
+                button.classList.remove('show');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Modal functions
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function (event) {
+            const modals = document.getElementsByClassName('poem-modal');
+            for (let i = 0; i < modals.length; i++) {
+                if (event.target == modals[i]) {
+                    modals[i].style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            }
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                const modals = document.getElementsByClassName('poem-modal');
+                for (let i = 0; i < modals.length; i++) {
+                    if (modals[i].style.display === 'block') {
+                        modals[i].style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                        break;
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

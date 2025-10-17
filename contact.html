@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="images/header 1.jpg">
+    <title>Contact | Thierry Bwuzure Music</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Crete Round, Dancing Script, Roboto Condensed, Roboto Flex -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Dancing+Script:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 id="name" class="zeyada-regular">
+                <a href="index.html">
+                    <span id="bwuzure">Thierry Bwuzure</span>
+                </a>
+            </h1>
+        </div>
+
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="poems.html">Poems</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="contact">
+        <div class="wrapper">
+            <div class="contact">
+                <div class="hero-section">
+                    <div class="title-container">
+                        <div class="decorative-line"></div>
+                        <h3 class="section-title">Get in Touch</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form action="contact" method="POST">
+                        <label for="first-name">First Name</label><br>
+                        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name"
+                            required><br>
+
+                        <label for="last-name">Last Name</label><br>
+                        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name"
+                            required><br>
+
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required><br>
+
+                        <label for="message">Message</label><br>
+                        <textarea class="textarea" id="message" name="message" placeholder="Leave a message"
+                            required></textarea>
+
+                        <button type="submit" class="submit">Submit</button>
+                    </form>
+                </div>
+
+                <div class="contact-img">
+                    <img src="images/profile.jpg" alt="Thierry Bwuzure Profile Photo">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper" id="social">
+            <ul class="social">
+                <li id="soundcloud">
+                    <a href="https://soundcloud.com/thierrybwuzure" target="_blank" rel="noopener"
+                        title="Follow me on SoundCloud" aria-label="Follow me on SoundCloud"></a>
+                </li>
+
+                <li id="youtube">
+                    <a href="https://www.youtube.com/@thierrybwuzuremusic" target="_blank" rel="noopener"
+                        title="Subscribe to my YouTube Channel" aria-label="Subscribe to my YouTube Channel"></a>
+                </li>
+
+                <li id="spotify">
+                    <a href="https://open.spotify.com/intl-fr/artist/6AAWaFP8W5Do6aw5xhrXoe" target="_blank"
+                        rel="noopener" title="Listen on Spotify" aria-label="Listen on Spotify"></a>
+                </li>
+
+                <li id="facebook">
+                    <a href="https://www.facebook.com/thierrybwuzuremusic/" target="_blank" rel="noopener"
+                        title="Follow me on Facebook" aria-label="Follow me on Facebook"></a>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+
+        <p>©2025 TovCode. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" onclick="scrollToTop()">↑</button>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const button = document.getElementById('scrollToTop');
+            if (window.pageYOffset > 300) {
+                button.classList.add('show');
+            } else {
+                button.classList.remove('show');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>
